@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useCommand } from '@/components/CommandContext'
 import {
-  RiArrowUpRightLine,
-  RiArrowDownRightLine,
+  RiArrowRightUpLine,
+  RiArrowRightDownLine,
   RiExchangeDollarLine,
   RiShip2Line,
   RiServerLine,
@@ -157,7 +157,7 @@ export default function CommandOverviewPage() {
                 {kpi.label}
               </span>
               <span className="inline-flex items-center gap-0.5 text-xs font-mono font-semibold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400">
-                <RiArrowUpRightLine />
+                <RiArrowRightUpLine />
                 {kpi.delta}
               </span>
             </div>
@@ -337,9 +337,9 @@ export default function CommandOverviewPage() {
                     }`}
                   >
                     {txn.type === 'Inflow' ? (
-                      <RiArrowUpRightLine className="text-lg" />
+                      <RiArrowRightUpLine className="text-lg" />
                     ) : (
-                      <RiArrowDownRightLine className="text-lg" />
+                      <RiArrowRightDownLine className="text-lg" />
                     )}
                   </div>
                   <div>

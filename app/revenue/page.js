@@ -7,8 +7,8 @@ import {
   RiSearchLine,
   RiAddCircleLine,
   RiDownload2Line,
-  RiArrowUpRightLine,
-  RiArrowDownRightLine,
+  RiArrowRightUpLine,
+  RiArrowRightDownLine,
   RiCloseLine,
   RiCheckDoubleLine,
 } from 'react-icons/ri'
@@ -216,9 +216,9 @@ export default function RevenueLedgerPage() {
                       }`}
                     >
                       {txn.type === 'Inflow' ? (
-                        <RiArrowUpRightLine className="text-emerald-400" />
+                        <RiArrowRightUpLine className="text-emerald-400" />
                       ) : (
-                        <RiArrowDownRightLine className="text-rose-400" />
+                        <RiArrowRightDownLine className="text-rose-400" />
                       )}
                       {txn.type === 'Inflow' ? '+' : '-'}
                       {formatMoney(txn.amountUsd)}
